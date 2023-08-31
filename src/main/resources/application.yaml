@@ -1,0 +1,23 @@
+
+
+server:
+  error:
+    include-stacktrace: always
+  port: 8080
+
+  servlet:
+    session:
+      timeout: 900
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/onlineExam-DB?createDatabaseIfNotExist=true
+    username: root
+    password: password123
+  graphql:
+    cors:
+      allowed-origins: http://localhost:3000/
+
